@@ -1,3 +1,36 @@
+/* css/estilo.css */
+
+/* Redefinição de variáveis raiz */
+:root {
+    /* Altera a cor primária global do Bootstrap (afetará todos os .btn-primary, .
+   text-primary, etc.) */
+    --bs-primary: #13ad64; /* Um tom de roxo, por exemplo */
+    --bs-secondary: #f4f4f4; /* Cinza suave */
+    --bs-font-sans-serif: 'Poppins', sans-serif; /* Define a fonte primária */
+}
+/* Aplica a fonte ao body */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Personalização do Título Hero */
+.hero-section .display-1 {
+    letter-spacing: -2px; /* Ajuste fino de kerning */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.icone-box {
+    text-align: center;
+    padding: 2rem;
+    border: 1px solid var(--bs-secondary);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.icone-box:hover {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 15px rgba(142, 36, 170, 0.15); /* Cor primária com transparência */
+}
+
 .profile-frame {
     width: min(100%, 190px);
     aspect-ratio: 1 / 1;
